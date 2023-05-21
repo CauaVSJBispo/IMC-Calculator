@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <link rel="stylesheet" href="src/css/imc.css">
+</head>
+<body>
+    <main>
+      <h1>Cálculo Índicie de Massa Corporal (IMC)</h1>
+
+      <div class="divAltura">
+        <label for="altura">Altura (M)</label>
+        <input onkeypress="return soNumeros(event)" type="text" id="altura">
+      </div>
+
+      <div class="divPeso">
+        <label for="peso">Peso (KG)</label>
+        <input onkeypress="return soNumeros(event)" type="text" id="peso">
+      </div>
+      
+      <div class="divCalculo">
+        <button onclick="calculoIMC()">Calcular IMC</button>
+      </div>
+
+      <span id="resultado"></span>
+    </main>
+
+    <script src="src/js/imc.js"></script>
+</body>
+</html>
